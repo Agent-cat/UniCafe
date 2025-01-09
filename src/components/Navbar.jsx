@@ -26,13 +26,16 @@ const Navbar = () => {
             <NavLink
               key={id}
               to={path}
-              className={({ isActive }) => `flex items-center justify-center w-8 h-8 rounded-lg transition-all duration-200 ${
+              className={({ isActive }) => `group relative flex items-center justify-center w-8 h-8 rounded-lg transition-all duration-200 ${
                 isActive
                   ? 'text-blue-600  bg-blue-200 scale-105' 
                   : 'text-gray-600 hover:bg-gray-50'
               }`}
             >
-              <Icon  className="w-6 h-6  " />
+              <Icon className="w-6 h-6" />
+              {/* <span className="absolute -bottom-12 scale-0 rounded-lg bg-blue-600 px-3 py-2 text-xs font-medium text-white shadow-lg group-hover:scale-100 transition-all duration-300 hover:bg-blue-500 before:content-[''] before:absolute before:top-0 before:left-1/2 before:-translate-x-1/2 before:-translate-y-1/2 before:rotate-45 before:w-2 before:h-2 before:bg-blue-600">
+                {id.charAt(0).toUpperCase() + id.slice(1)}
+              </span> */}
             </NavLink>
           ))}
         </div>
