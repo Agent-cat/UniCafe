@@ -6,7 +6,7 @@ const App = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       <Navbar/>
-      <main className="">
+      <main className="pt-16">
       <Navroutes/>
       </main>
     </div>
