@@ -2,7 +2,7 @@ import React from 'react'
 
 const Chat = ({ onMenuClick, onDetailsClick }) => {
   return (
-    <div className="flex-1 h-[93vh]  flex flex-col bg-white">
+    <div className="flex-1 h-[92vh]  flex flex-col bg-white">
       {/* Chat Header */}
       <div className="px-4 py-4 border-b flex items-center justify-between lg:px-6">
         {/* Mobile Menu Button */}
