@@ -5,7 +5,7 @@ const TweetBox = () => {
   const [image, setImage] = useState(null)
   const [isEmojiPickerOpen, setIsEmojiPickerOpen] = useState(false)
   const [charCount, setCharCount] = useState(0)
-  const MAX_CHARS = 280
+  const MAX_CHARS = 300
 
   const handleContentChange = (e) => {
     const text = e.target.value
